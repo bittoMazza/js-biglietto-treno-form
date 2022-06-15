@@ -2,7 +2,7 @@ let userNumKm;
 let userAge;
 let ticketPrice;
 let userCompleteName;
-let ticket;
+let ticket = document.getElementById('user-ticket');
 let carriageTicket;
 let cpCodeTicket;
 
@@ -53,7 +53,7 @@ submitBtn.addEventListener('click',function(){
     document.getElementById('cp-code-ticket').innerHTML = cpCodeTicket;
     
     document.getElementById('ticket-price-ticket').innerHTML = "€ : "+ticketPrice;
-    ticket = document.getElementById('user-ticket');
+    ticket.classList.remove("d-none")
     ticket.classList.add("d-block")
     
 })
@@ -63,5 +63,7 @@ const deleteBtn = document.getElementById('delete-btn');
 deleteBtn.addEventListener('click',function(){
     document.getElementById('user-complete-name').value = "";
     document.getElementById("user-km").value = "";
+    ticket.classList.remove("d-block")
+    ticket.classList.add("d-none");
 })
 
