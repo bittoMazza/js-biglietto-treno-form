@@ -1,0 +1,31 @@
+:root{
+    --main-color:slateblue;
+}
+
+body{
+    height: 100vh;
+    background-color:var(--main-color);
+}
+
+.main-color{
+    color: var(--main-color);
+}
+
+input[type=text] {
+    border: none;
+    padding: 5px;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+  }
+
+
+.ms_btn{
+    background-color: var(--main-color);
+    padding: 8px 12px;
+    border: none;
+    transition: 0.3s;
+}
+
+.ms_btn:hover{
+    box-shadow: 0 0 10px 5px var(--main-color);
+}

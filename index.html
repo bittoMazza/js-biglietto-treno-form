@@ -10,18 +10,38 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Esercizio Biglietto Treno</h1>
-    <div>
-        <label for="">Inserire chilometri da percorrere</label>
-        <input type="text" class="" id="user-km" placeholder="Inserire KM">
-      </div>
-      <div>
-        <label for="">Inserire età</label>
-        <input type="text" class="" id="user-age" placeholder="Inserire età">
-      </div>
-      <button class="btn btn-primary" id="submit-btn">Submit</button>
+    <div class="container pt-5">
+        <div class="row">
+            <h1 class="text-white text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <div class="col-12 bg-white rounded px-5 py-5">               
+                <div class="input-user-zone d-flex justify-content-between text-center px-5">
+                    <div>
+                        <label for="" class="main-color h3 text-center">Nome e Cognome</label><br>
+                        <input type="text" class="" id="user-complete-name" placeholder="Inserire nome e cognome">
+                    </div>
+                    <div>
+                        <label for="" class="main-color h3 text-center">KM da percorrere</label><br>
+                        <input type="text" class="" id="user-km" placeholder="Inserire KM">
+                    </div>
+                    <div>
+                        <label for="" class="main-color h3 text-center">ETA'</label><br>
+                        <input type="text" class="" id="user-age" placeholder="Inserire età">
+                    </div>
+                </div>
+                <div class="btn-zone col-12 d-flex justify-content-center pt-5">
+                    <button class="ms_btn text-white rounded text-center mx-5" id="submit-btn">Genera biglietto</button>
+                    <button class="ms_btn text-white rounded text-center mx-5" id="delete-btn">Annulla</button> 
+                </div>       
+            </div>                
+        </div>
+        <div class="row pt-5">
+            <h2 class="text-center text-white"> IL TUO BIGLIETTO </h2>
+        </div>
+    </div>
+    
 <script src="./js/script.js"></script>    
 </body>
 </html>

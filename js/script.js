@@ -2,6 +2,7 @@ let userNumKm;
 let userAge;
 let ticketPrice;
 
+// Nel momento in cui si clicca il bottone,vengono presi gli input dell'utente
 const submitBtn = document.getElementById('submit-btn');
 submitBtn.addEventListener('click',function(){
     userNumKm = parseInt(document.getElementById('user-km').value);
@@ -33,8 +34,14 @@ submitBtn.addEventListener('click',function(){
     }
 
     ticketPrice = ticketPrice.toFixed(2);
+    console.clear();
     console.log('Il prezzo del biglietto è : €'+ ticketPrice)
 
 })
 
-
+// Diamo valore "" ovvero vuoto alle input text,così da cancellare cosa aveva inserito l'utente
+const deleteBtn = document.getElementById('delete-btn');
+deleteBtn.addEventListener('click',function(){
+    document.getElementById("user-km").value = "";
+    document.getElementById("user-age").value = "";
+})
