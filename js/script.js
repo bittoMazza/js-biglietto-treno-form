@@ -3,7 +3,6 @@ let userAge;
 let ticketPrice;
 let userCompleteName;
 let ticket;
-let typeOfTicket = "Biglietto Standard";
 let carriageTicket;
 let cpCodeTicket;
 
@@ -13,6 +12,7 @@ submitBtn.addEventListener('click',function(){
     userCompleteName = document.getElementById('user-complete-name').value;
     userNumKm = parseInt(document.getElementById('user-km').value);
     userAge = document.getElementById('user-age').value;
+    let typeOfTicket = "Biglietto Standard";
     ticketPrice = userNumKm * 0.26;
     // Ipotizziamo che non esistano stazioni distanti meno di 5 KM l'una dall'altra
     if (isNaN(userNumKm) == true || userNumKm < 5) 
